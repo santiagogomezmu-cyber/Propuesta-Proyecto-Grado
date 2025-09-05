@@ -1,12 +1,26 @@
 # Gestor de Inventario para Pequeños Negocios
 
-Mi propuesta consiste en desarrollar un sistema de gestión de inventario dirigido a pequeños negocios o tiendas locales, que muchas veces no cuentan con herramientas digitales para controlar sus productos.
-Actualmente, gran parte de estos negocios llevan su inventario en hojas de papel o en cuadernos, lo que puede generar errores, pérdidas de información y falta de control sobre las ventas y el stock disponible.
-Con este proyecto busco dar una solución sencilla y práctica que permita:
-Registrar productos con sus datos principales (nombre, precio, cantidad, etc.).
-Actualizar el stock cada vez que se realicen ventas o compras.
-Generar alertas cuando un producto esté por agotarse.
-Obtener reportes básicos de inventario y ventas.
+### Problema identificado:
+Muchos pequeños negocios aún llevan el control de su inventario en cuadernos o en hojas de cálculo básicas. Esto genera errores frecuentes, pérdida de información y dificultad para conocer el estado real de sus productos, ocasionando desabastecimiento o sobrecompra.
 
-Este sistema estaría diseñado para ser fácil de usar, seguro y accesible, con una interfaz intuitiva que pueda ser utilizada por personas sin conocimientos técnicos.
-De esta forma, el proyecto busca mejorar la organización, reducir errores y optimizar el control de los productos en pequeños negocios, aportando un valor real a los usuarios.
+### Objetivo general:
+Diseñar y desarrollar un sistema de gestión de inventario que permita a pequeños negocios registrar, consultar y controlar de forma eficiente sus productos y ventas.
+
+### Objetivos específicos:
+Permitir el registro y actualización de productos con información básica (nombre, código, precio, proveedor, cantidad).
+Facilitar el registro de ventas para que el sistema actualice automáticamente el stock.
+Generar alertas cuando los productos lleguen a un nivel mínimo de inventario.
+Ofrecer reportes básicos de stock y movimientos de productos.
+
+### Usuarios principales:
+Administrador o dueño del negocio.
+Empleados responsables del manejo de inventario.
+
+### Requerimientos iniciales:
+Registro, edición y eliminación de productos.
+Registro de ventas y actualización automática de inventario.
+Consulta de productos disponibles y búsqueda rápida.
+Generación de reportes simples de inventario.
+Alertas de stock mínimo.
+
+Con esta propuesta, el proyecto busca resolver un problema real de organización y control en pequeños negocios, aportando eficiencia y confiabilidad en el manejo de inventarios.
