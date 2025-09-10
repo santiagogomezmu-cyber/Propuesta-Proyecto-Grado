@@ -26,3 +26,4 @@ Alertas de stock mínimo.
 Con esta propuesta, el proyecto busca resolver un problema real de organización y control en pequeños negocios, aportando eficiencia y confiabilidad en el manejo de inventarios.
 
 ## Diagrama de Ishikawa
+![Diagrama Ishikawa](DiagramaIshikawa.png)
