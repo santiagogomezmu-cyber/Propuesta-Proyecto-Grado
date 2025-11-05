@@ -1,29 +1,78 @@
-# Gestor de Inventario para Pequeños Negocios
+# Validación y Verificación – Gestor de Inventario
 
-### Problema identificado:
-Muchos pequeños negocios aún llevan el control de su inventario en cuadernos o en hojas de cálculo básicas. Esto genera errores frecuentes, pérdida de información y dificultad para conocer el estado real de sus productos, ocasionando desabastecimiento o sobrecompra.
+## ¿Qué es validación y verificación?
 
-### Objetivo general:
-Diseñar y desarrollar un sistema de gestión de inventario que permita a pequeños negocios registrar, consultar y controlar de forma eficiente sus productos y ventas.
+- **Validación**: ¿Estoy construyendo el producto correcto?
+- **Verificación**: ¿Estoy construyendo el producto correctamente?
 
-### Objetivos específicos:
-Permitir el registro y actualización de productos con información básica (nombre, código, precio, proveedor, cantidad).
-Facilitar el registro de ventas para que el sistema actualice automáticamente el stock.
-Generar alertas cuando los productos lleguen a un nivel mínimo de inventario.
-Ofrecer reportes básicos de stock y movimientos de productos.
+## Casos de Uso Identificados
 
-### Usuarios principales:
-Administrador o dueño del negocio.
-Empleados responsables del manejo de inventario.
+---
 
-### Requerimientos iniciales:
-Registro, edición y eliminación de productos.
-Registro de ventas y actualización automática de inventario.
-Consulta de productos disponibles y búsqueda rápida.
-Generación de reportes simples de inventario.
-Alertas de stock mínimo.
+### 1 – Registrar Producto
 
-Con esta propuesta, el proyecto busca resolver un problema real de organización y control en pequeños negocios, aportando eficiencia y confiabilidad en el manejo de inventarios.
+- **Actor**: Administrador
+- **Descripción**: El usuario registra un nuevo producto con información básica.
+- **Validación**: Todos los campos deben ser completados correctamente.
+- **Verificación**:
+  - Código único.
+  - Precio y cantidad positivos.
+  - Datos almacenados correctamente.
 
-## Diagrama de Ishikawa
-![Diagrama Ishikawa](DiagramaIshikawa.png)
+---
+
+### 2 – Editar Producto
+
+- **Actor**: Administrador
+- **Descripción**: Actualiza la información de un producto.
+- **Validación**: Solo personal autorizado puede editar.
+- **Verificación**:
+  - Cambios guardados correctamente.
+  - Código único permanece sin duplicados.
+
+---
+
+### 3 – Eliminar Producto
+
+- **Actor**: Administrador
+- **Descripción**: Elimina un producto del inventario.
+- **Validación**: No debe permitir eliminar productos con historial de ventas (opcional).
+- **Verificación**:
+  - Eliminación efectiva.
+  - Sin errores en relaciones (ventas, reportes).
+
+---
+
+### 4 – Registrar Venta
+
+- **Actor**: Empleado / Administrador
+- **Descripción**: Registra una venta y actualiza el stock.
+- **Validación**:
+  - Productos existentes.
+  - Stock suficiente.
+- **Verificación**:
+  - Stock actualizado.
+  - Venta registrada correctamente.
+
+---
+
+### 5 – Generar Reporte de Inventario
+
+- **Actor**: Administrador
+- **Descripción**: Genera reportes de stock y movimientos.
+- **Validación**: Permitir filtros básicos (fecha, producto).
+- **Verificación**:
+  - Datos correctos.
+  - Reporte legible (PDF/Excel/HTML).
+
+---
+
+### 6 – Alerta de Stock Mínimo
+
+- **Actor**: Sistema
+- **Descripción**: Notifica cuando un producto llega a su stock mínimo.
+- **Validación**: Definición previa de stock mínimo por producto.
+- **Verificación**:
+  - Alerta activa cuando se cumple la condición.
+  - Notificación visible (panel, email, etc.).
+
