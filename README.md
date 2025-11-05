@@ -27,3 +27,6 @@ Con esta propuesta, el proyecto busca resolver un problema real de organización
 
 ## Diagrama de Ishikawa
 ![Diagrama Ishikawa](DiagramaIshikawa.png)
+
+## Diagrama de Flujo
+![Diagrama de Flujo](Diagrama.png)
